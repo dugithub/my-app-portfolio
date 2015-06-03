@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Nanodegree Apps!"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="14pt"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spotify Streamerr"
+        android:id="@+id/btnSpotifyStreamer"
+        android:clickable="true"
+        android:background="#7986CB"
+        android:enabled="true"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:layout_below="@id/textView"
+        android:layout_alignLeft="@+id/btnCapstoneMyOwnApp"
+        android:layout_alignRight="@+id/btnCapstoneMyOwnApp"
+        android:onClick="sendMessage"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scores App"
+        android:id="@+id/btnScoresApp"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:background="#7986CB"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_below="@id/btnSpotifyStreamer"
+        android:layout_alignLeft="@+id/btnCapstoneMyOwnApp"
+        android:layout_alignRight="@+id/btnCapstoneMyOwnApp"
+        android:onClick="sendMessage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library App"
+        android:id="@+id/btnLibraryApp"
+        android:background="#7986CB"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_below="@id/btnScoresApp"
+        android:layout_alignLeft="@+id/btnCapstoneMyOwnApp"
+        android:layout_alignRight="@+id/btnCapstoneMyOwnApp"
+        android:onClick="sendMessage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build It Bigger"
+        android:id="@+id/btnBuikdItBigger"
+        android:background="#7986CB"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnLibraryApp"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_alignLeft="@+id/btnCapstoneMyOwnApp"
+        android:layout_alignRight="@+id/btnCapstoneMyOwnApp"
+        android:onClick="sendMessage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ Reader"
+        android:id="@+id/btnXYZReader"
+        android:background="#7986CB"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        android:layout_below="@+id/btnBuikdItBigger"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_alignRight="@+id/btnBuikdItBigger"
+        android:layout_alignLeft="@+id/btnCapstoneMyOwnApp"
+        android:onClick="sendMessage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capstone My Own App"
+        android:id="@+id/btnCapstoneMyOwnApp"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        android:background="#1A237E"
+        android:enabled="true"
+        android:clickable="true"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnXYZReader"
+        android:onClick="sendMessage"
+        android:nestedScrollingEnabled="false" />
+</RelativeLayout>
